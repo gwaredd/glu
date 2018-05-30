@@ -29,6 +29,6 @@ A reminder for when I forget a thing ...
 * d3 - graphics visualisation
 * react / redux / webpack / bootstrap - web tools
 * express - node.js based web server
-* [glob](https://www.npmjs.com/package/glob) - 
+* [glob](https://www.npmjs.com/package/glob) - file matching
 * [moment](https://momentjs.com/) - date and time handling
 
