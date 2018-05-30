@@ -4,7 +4,6 @@ _      = require "lodash"
 chalk  = require "chalk"
 yargs  = require "yargs"
 axios  = require "axios"
-moment = require "moment"
 
 log    = require "./libs/log"
 utils  = require "./libs/utils"
