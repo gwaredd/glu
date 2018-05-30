@@ -1,17 +1,19 @@
 #------------------------------------------------------------------------------
 
-_     = require "lodash"
-chalk = require "chalk"
-axios = require "axios"
-yargs = require "yargs"
-log   = require "./log"
-utils = require "./utils"
+_      = require "lodash"
+chalk  = require "chalk"
+yargs  = require "yargs"
+axios  = require "axios"
+moment = require "moment"
+
+log    = require "./libs/log"
+utils  = require "./libs/utils"
 
 
 #------------------------------------------------------------------------------
 # command line args
 
-version = '1.0.0'
+version = '0.0.0'
 
 usage = chalk.green( "Usage:" ) + chalk.yellow " $0 [options]" + chalk.white "\n\n";
 usage += """
