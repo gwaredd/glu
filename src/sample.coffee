@@ -13,32 +13,22 @@ utils  = require "./libs/utils"
 #------------------------------------------------------------------------------
 # command line args
 
-version = '0.0.0'
-
-usage = chalk.green( "Usage:" ) + chalk.yellow " $0 [options]" + chalk.white "\n\n";
-usage += """
-Do some useful things
-"""
-
-argv = yargs
-
-  .usage usage
-
-  .help 'help'
-  .alias 'help', [ 'h', '?' ]
-
-  .version version
-  .alias 'version', [ 'v' ]
-
-  .options {
-
+version     = '0.0.0'
+description = "Do some useful things"
+options     =
     input:
       alias       : 'i'
       description : 'input filename'
       requiresArg : true
       required    : false
-  }
 
+argv = yargs
+  .usage  chalk.green( "Usage:" ) + chalk.yellow " $0 [options]" + chalk.white "\n\n" + description
+  .help   'help'
+  .alias  'help', [ 'h', '?' ]
+  .version version
+  .alias  'version', [ 'v' ]
+  .options options
   .argv
 
 
