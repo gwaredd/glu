@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "main": "coffee src/sample.coffee",
+    "sample": "coffee src/sample.coffee"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "lodash": "^4.17.10",
+    "log4js": "^2.7.0",
+    "yargs": "^11.0.0"
+  }
+}
