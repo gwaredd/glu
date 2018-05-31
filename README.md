@@ -1,64 +1,53 @@
 # glu
-> project template for 'glue' tools
+> project template for 'glue' tools and scripts
 
 ## Install
 
-```yarn install```
+```
+yarn install
+yarn main
+yarn test
+```
 
-start hacking 
 
-## Added Libraries
+## Installed Libraries
 
 ### Basics
 
-* lodash - functional programming
-* axios - web requests (promise based)
-* log4js - logging
-* yargs - command line options
+* [yargs](https://github.com/yargs/yargs) - command line options
+* [log4js](http://stritti.github.io/log4js/docu/users-guide.html) - logging
+* [lodash](https://lodash.com/) - functional programming
+* [axios](https://github.com/axios/axios) - web requests (promise based)
 
 ### Testing
 
-* mocha
-* chai
-* coffeescript
+* [mocha](https://mochajs.org/) - unit testing
+* [chai](http://www.chaijs.com/) - assertion library
+* [coffeescript](https://coffeescript.org/) - for writing tests in coffeescript
 
-## Goto Libraries
+## Go to Libraries
 
 <!-- https://github.com/sorrycc/awesome-javascript -->
 
-A reminder for when I forget a thing ...
+### A reminder for when I forget a thing ...
 
-* d3 - graphics visualisation
-* react / redux / webpack / bootstrap - web tools
-* express - node.js based web server
 * [cheerio](https://github.com/cheeriojs/cheerio) - html scraping
 * [glob](https://www.npmjs.com/package/glob) - file matching
 * [moment](https://momentjs.com/) - date and time handling
 * [q](https://github.com/kriskowal/q) - promises
 
-## Runtimes
+### Runtimes
 
-* [PhantomJS](https://github.com/ariya/phantomjs)
-* [Electron](https://electronjs.org/)
-
-## Webpages
-
-* [ace](https://github.com/ajaxorg/ace) - code editor
+* [PhantomJS](http://phantomjs.org/) - headless browser (testing/automation)
+* [Electron](https://electronjs.org/) - node based desktop app 'container'
 
 
-## Tools
-
-* [yarn](https://yarnpkg.com/en/) - package manager (npm replacement)
-* [ngrok](https://ngrok.com/) - testing callbacks locally
-
-## To Evaluate
-
-* [voca](https://github.com/panzerdp/voca) - string library
+| Tools | Version  |      |
+|-------|----------|------|
+| [node](https://nodejs.org/en/)  | 8.11.1 | javascript runtime |
+| [yarn](https://yarnpkg.com/en/) | 1.5.1  | package manager (npm replacement) |
+| [ngrok](https://ngrok.com/)     |        | testing callbacks/webhooks locally |
 
 <!--
-
-tempalting - 
-pug - https://github.com/pugjs/pug
-handlebars - https://github.com/pugjs/pug
-
+* [voca](https://github.com/panzerdp/voca) - string library
 -->

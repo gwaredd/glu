@@ -39,6 +39,10 @@ else
   utils.die 'No filename'
 
 
+# string format
+# "num={0}".format(1).should.equal "num=1"
+
+
 # axios
 #   .get 'http://www.google.co.uk'
 #   .catch log.error
