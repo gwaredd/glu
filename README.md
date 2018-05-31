@@ -45,7 +45,7 @@ yarn test
 
 
 | Tools                                         | Version  |      |
-|----------------------------------------- -----|----------|------|
+|-----------------------------------------------|----------|------|
 | [node](https://nodejs.org/en/)                | 8.11.1   | javascript runtime |
 | [yarn](https://yarnpkg.com/en/)               | 1.5.1    | package manager (npm replacement) |
 | [coffeescript](https://coffeescript.org/)     | 2.3.1    |  |
