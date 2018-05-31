@@ -35,6 +35,8 @@ yarn test
 * [glob](https://www.npmjs.com/package/glob) - file matching
 * [moment](https://momentjs.com/) - date and time handling
 * [q](https://github.com/kriskowal/q) - promises
+* [voca](https://vocajs.com/) - for when string.format isn't quite enough
+
 
 ### Runtimes
 
@@ -42,12 +44,10 @@ yarn test
 * [Electron](https://electronjs.org/) - node based desktop app 'container'
 
 
-| Tools | Version  |      |
-|-------|----------|------|
-| [node](https://nodejs.org/en/)  | 8.11.1 | javascript runtime |
-| [yarn](https://yarnpkg.com/en/) | 1.5.1  | package manager (npm replacement) |
-| [ngrok](https://ngrok.com/)     |        | testing callbacks/webhooks locally |
+| Tools                                         | Version  |      |
+|----------------------------------------- -----|----------|------|
+| [node](https://nodejs.org/en/)                | 8.11.1   | javascript runtime |
+| [yarn](https://yarnpkg.com/en/)               | 1.5.1    | package manager (npm replacement) |
+| [coffeescript](https://coffeescript.org/)     | 2.3.1    |  |
+| [ngrok](https://ngrok.com/)                   |          | testing callbacks/webhooks locally |
 
-<!--
-* [voca](https://github.com/panzerdp/voca) - string library
--->
