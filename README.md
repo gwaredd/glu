@@ -4,7 +4,7 @@
 ## Install
 
 ```
-yarn install
+yarn setup
 yarn main
 yarn test
 ```
