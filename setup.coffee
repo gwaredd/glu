@@ -13,6 +13,10 @@ fs.removeSync './.git'
 
 exec 'git init', stdio:[0,1,2]
 exec 'git add .', stdio:[0,1,2]
-exec "git commit -m 'initial commit'", stdio:[0,1,2]
 
-fs.removeSync './setup.coffee'
+finish = ->
+  exec 'git commit -m "initial commit"', stdio:[0,1,2]
+  fs.removeSync './setup.coffee'
+
+setTimeout finish, 500
+
