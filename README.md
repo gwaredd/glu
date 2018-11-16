@@ -31,12 +31,14 @@ yarn test
 
 ### A reminder for when I forget a thing ...
 
+* [chancejs](https://github.com/chancejs/chancejs) - generating random test data
 * [cheerio](https://github.com/cheeriojs/cheerio) - html scraping
+* [enquirer](https://www.npmjs.com/package/enquirer) - for command line interaction
 * [glob](https://www.npmjs.com/package/glob) - file matching
 * [moment](https://momentjs.com/) - date and time handling
 * [q](https://github.com/kriskowal/q) - promises
 * [voca](https://vocajs.com/) - for when string.format isn't quite enough
-* [chancejs](https://github.com/chancejs/chancejs) - generating random test data
+
 
 
 ### Runtimes
