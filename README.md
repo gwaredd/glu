@@ -38,7 +38,9 @@ yarn test
 * [moment](https://momentjs.com/) - date and time handling
 * [q](https://github.com/kriskowal/q) - promises
 * [voca](https://vocajs.com/) - for when string.format isn't quite enough
-
+* axios
+* yargs
+* d3
 
 
 ### Runtimes
