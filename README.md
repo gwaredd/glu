@@ -47,7 +47,7 @@ yarn test
 
 * [PhantomJS](http://phantomjs.org/) - headless browser (testing/automation)
 * [Electron](https://electronjs.org/) - node based desktop app 'container'
-
+* Puppeteer
 
 | Tools                                         | Version  |      |
 |-----------------------------------------------|----------|------|
