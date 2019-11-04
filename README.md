@@ -4,9 +4,9 @@
 ## Install
 
 ```
+git clone https://github.com/gwaredd/glu.git <MyProject>
+cd <MyProject>
 yarn setup
-yarn main
-yarn test
 ```
 
 
@@ -16,6 +16,8 @@ yarn test
 
 * [yargs](https://github.com/yargs/yargs) - command line options
 * [log4js](http://stritti.github.io/log4js/docu/users-guide.html) - logging
+* [fs-extra](https://github.com/jprichardson/node-fs-extra)
+* [glob](https://github.com/isaacs/node-glob)
 * [lodash](https://lodash.com/) - functional programming
 * [axios](https://github.com/axios/axios) - web requests (promise based)
 
@@ -36,10 +38,7 @@ yarn test
 * [enquirer](https://www.npmjs.com/package/enquirer) - for command line interaction
 * [glob](https://www.npmjs.com/package/glob) - file matching
 * [moment](https://momentjs.com/) - date and time handling
-* [q](https://github.com/kriskowal/q) - promises
 * [voca](https://vocajs.com/) - for when string.format isn't quite enough
-* axios
-* yargs
 * d3
 
 
