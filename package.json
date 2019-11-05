@@ -10,7 +10,18 @@
     "test": "coffee ./dev/test.coffee"
   },
   "dependencies": {
+<<<<<<< HEAD
     "fs-extra": "^8.1.0",
     "glob": "^7.1.5"
+=======
+    "axios": "^0.18.1",
+    "chai": "^4.1.2",
+    "coffeescript": "^2.3.1",
+    "fs-extra": "^6.0.1",
+    "lodash": "^4.17.13",
+    "log4js": "^2.7.0",
+    "mocha": "^5.2.0",
+    "yargs": "^11.0.0"
+>>>>>>> a9d12b73643b7b3bf0b33f59cacd9050ac8d1248
   }
 }
