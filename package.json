@@ -1,17 +1,16 @@
 {
+  "name": "glu",
+  "version": "1.1.0",
+  "repository": "git@github.com:gwaredd/glu.git",
+  "main": "./dev/setup.coffee",
+  "license": "MIT",
   "scripts": {
-    "setup": "coffee ./setup.coffee",
-    "main": "coffee src/sample.coffee --input=test.file",
-    "test": "node node_modules/mocha/bin/mocha --opts ./src/test/mocha.opts"
+    "setup": "coffee ./dev/setup.coffee",
+    "clone": "coffee ./dev/clone.coffee",
+    "test": "coffee ./dev/test.coffee"
   },
   "dependencies": {
-    "axios": "^0.18.0",
-    "chai": "^4.1.2",
-    "coffeescript": "^2.3.1",
-    "fs-extra": "^6.0.1",
-    "lodash": "^4.17.13",
-    "log4js": "^2.7.0",
-    "mocha": "^5.2.0",
-    "yargs": "^11.0.0"
+    "fs-extra": "^8.1.0",
+    "glob": "^7.1.5"
   }
 }
