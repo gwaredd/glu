@@ -8,15 +8,13 @@ exec 'yarn install', stdio:[0,1,2]
 
 fs   = require 'fs-extra'
 glob = require 'glob'
-package_file = require '../pkg/package.json'
 
-console.log "copy pkg/.gitignore -> .gitignore"
-fs.copySync 'pkg/.gitignore', '.gitignore'
+copy = (file) ->
+  console.log "copy pkg/#{file} -> #{file}"
+  fs.copySync "pkg/#{file}", file
 
-for src in glob.sync 'pkg/*', [ignore: 'pkg/package.json']
-  dst = src.replace 'pkg/', ''
-  console.log "copy #{src} -> #{dst}"
-  fs.copySync src, dst
+copy '.gitignore'
+copy file.replace 'pkg/', '' for file in glob.sync 'pkg/*', [ignore: 'pkg/package.json']
 
 # fix up package.json
 

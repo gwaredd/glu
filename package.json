@@ -6,8 +6,7 @@
   "license": "MIT",
   "scripts": {
     "setup": "coffee ./dev/setup.coffee",
-    "clone": "coffee ./dev/clone.coffee",
-    "test": "coffee ./dev/test.coffee"
+    "clone": "coffee ./dev/clone.coffee"
   },
   "dependencies": {
     "fs-extra": "^8.1.0",
