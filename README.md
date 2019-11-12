@@ -29,18 +29,18 @@ yarn setup
 
 ## Go to Libraries
 
-<!-- https://github.com/sorrycc/awesome-javascript -->
-
 ### A reminder for when I forget a thing ...
 
 * [chancejs](https://github.com/chancejs/chancejs) - generating random test data
 * [cheerio](https://github.com/cheeriojs/cheerio) - html scraping
 * [enquirer](https://www.npmjs.com/package/enquirer) - for command line interaction
-* [glob](https://www.npmjs.com/package/glob) - file matching
 * [moment](https://momentjs.com/) - date and time handling
 * [voca](https://vocajs.com/) - for when string.format isn't quite enough
-* d3
-
+* [d3](https://github.com/d3/d3)
+* [pug](https://github.com/pugjs/pug)
+* [ace](https://github.com/ajaxorg/ace)
+* [toastr](https://github.com/CodeSeven/toastr)
+* https://github.com/sorrycc/awesome-javascript
 
 ### Runtimes
 

@@ -30,8 +30,6 @@ if not String.prototype.chalk
 if not String.prototype.count
   String.prototype.count = (ch) -> _.sumBy this , (c) => c == ch
 
-
-
 #------------------------------------------------------------------------------
 # format
 #   format string arguments with padding and alignment (like C# format)
