@@ -14,8 +14,8 @@ argv = yargs
   .options  {
     ...utils.default_cmdline_options
   }
-  # .command  'search', 'search for game'
-  # .example  'yarn rr https://www.metacritic.com/game/playstation-4/doom'
+  # .command  'search', 'search for something'
+  # .example  'yarn main search hat'
   # .epilog   'copyright 2019'
   .argv
 
