@@ -1,18 +1,36 @@
 #------------------------------------------------------------------------------
 # https://log4js-node.github.io/log4js-node/index.html
 
-config = 
+layout =
+  type    : 'pattern'
+  pattern : '[%d{yyyy-MM-dd hh:mm:ss}] %[[%p]%] %m'
+
+config =
+
   appenders:
-    console     :
-      type      : 'console'
-      layout    :
-        type    : 'pattern'
-        pattern : '[%d{yyyy-MM-dd hh:mm:ss}] %[[%p]%] %m'
+
+    stdout        : type: 'stdout', layout: layout
+    stderr        : type: 'stderr', layout: layout
+    
+    stdoutFilter  :
+      type        : 'logLevelFilter'
+      level       : 'print'
+      maxLevel    : 'print'
+      appender    : 'stdout'
+    stderrFilter  :
+      type        : 'logLevelFilter'
+      level       : 'note'
+      appender    : 'stderr'
+    verboseFilter :
+      type        : 'logLevelFilter'
+      level       : 'verbose'
+      maxLevel    : 'verbose'
+      appender    : 'stderr'
 
   categories: 
     default     : 
-      level     : if process.argv.includes( '--debug' ) or process.argv.includes( '--verbose' ) then 'verbose' else 'info'
-      appenders : [ 'console' ]
+      level     : if process.argv.includes '--verbose' then 'verbose' else 'print'
+      appenders : [ 'stderrFilter', 'stdoutFilter', 'verboseFilter' ]
 
   levels:
     verbose   : value: 10000, colour: 'blue'
