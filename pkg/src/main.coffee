@@ -7,14 +7,18 @@ cmds   = require('require-directory') module, './cmds'
 #------------------------------------------------------------------------------
 # command line args
 
+for cmd, cfg of cmds
+  yargs.command cmd, cfg.description || ''
+  yargs.example cfg.example if cfg.example
+  yargs.options cfg.options if cfg.options
+
 argv = yargs
-  .usage    '%c{Usage}: %y{$0} %c{<command> [options]}'.chalk()
+  .usage    'Usage: %y{$0} %c{<command>} %y{[options]}'.chalk()
   .version  utils.version
   .help     'help'
   .options  {
     ...utils.default_cmdline_options
   }
-  # .command  'search', 'search for something'
   # .example  'yarn main search hat'
   # .epilog   'copyright 2019'
   .argv
@@ -31,6 +35,6 @@ unless cmd
   process.exit 1
 
 if cmd of cmds
-  cmds[ cmd ] argv 
+  cmds[ cmd ].run argv 
 else
   log.warn "Unknown command `%c{#{cmd}}`".chalk()

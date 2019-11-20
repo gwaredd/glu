@@ -1,2 +1,3 @@
 module.exports = (argv) ->
-  console.log "second", argv
+  run: (argv) ->
+    log.print "second", argv
