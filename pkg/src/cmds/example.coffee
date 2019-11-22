@@ -20,8 +20,8 @@ module.exports =
   run         : command
   enable      : true
   visible     : true
-  description : 'first command'
-  example     : 'first example'
+  description : 'example command'
+  example     : 'example of example'
   options     :
     first:
-      description : 'example of first cmd line options'
+      description : 'special command line options for example'

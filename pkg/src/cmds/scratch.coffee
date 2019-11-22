@@ -12,5 +12,5 @@ command = (argv) ->
 
 #------------------------------------------------------------------------------
 
-module.exports = visible: false, run: command
+module.exports = visible: false, enable: true, run: command
 

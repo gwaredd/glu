@@ -1,1 +1,1 @@
-global.die = (msg) -> log.fatal msg; process.exit 1
+global.die = (msg) -> log.error msg; process.exit 1
