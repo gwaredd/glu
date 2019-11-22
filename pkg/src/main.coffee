@@ -8,6 +8,8 @@ cmds   = require('require-directory') module, './cmds'
 # command line args
 
 for cmd, cfg of cmds
+  continue if 'visible' of cfg and not cfg.visible
+  continue if 'enable' of cfg and not cfg.enable
   yargs.command cmd, cfg.description || ''
   yargs.example cfg.example if cfg.example
   yargs.options cfg.options if cfg.options
@@ -19,8 +21,6 @@ argv = yargs
   .options  {
     ...utils.default_cmdline_options
   }
-  # .example  'yarn main search hat'
-  # .epilog   'copyright 2019'
   .argv
 
 
@@ -35,6 +35,8 @@ unless cmd
   process.exit 1
 
 if cmd of cmds
-  cmds[ cmd ].run argv 
+  cfg = cmds[ cmd ]
+  die "#{cmd} disabled" if 'enable' of cfg and not cfg.enable
+  cfg.run argv 
 else
   log.warn "Unknown command `%c{#{cmd}}`".chalk()
