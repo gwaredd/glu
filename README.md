@@ -20,6 +20,7 @@ yarn setup
 * [glob](https://github.com/isaacs/node-glob)
 * [lodash](https://lodash.com/) - functional programming
 * [axios](https://github.com/axios/axios) - web requests (promise based)
+* [require-directory](https://github.com/troygoode/node-require-directory)
 
 ### Testing
 
