@@ -38,10 +38,9 @@ yarn setup
 * [moment](https://momentjs.com/) - date and time handling
 * [voca](https://vocajs.com/) - for when string.format isn't quite enough
 * [d3](https://github.com/d3/d3)
-* [pug](https://github.com/pugjs/pug)
-* [ace](https://github.com/ajaxorg/ace)
-* [toastr](https://github.com/CodeSeven/toastr)
-* https://github.com/sorrycc/awesome-javascript
+* [pug](https://github.com/pugjs/pug) - templating
+* [ace](https://github.com/ajaxorg/ace) - code editor (web)
+* [toastr](https://github.com/CodeSeven/toastr) - toast popups (web)
 
 ### Runtimes
 
