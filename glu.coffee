@@ -8,3 +8,5 @@ global.warn    = (m) -> print chalk.magenta( '[WARN]' ), m
 global.success = (m) -> print chalk.green( '[SUCCESS]' ), m
 global.info    = (m) -> print chalk.cyan( '[INFO]' ), m
 global.log     = (m) -> print '[LOG]', m
+
+global.sleep   = (ms) -> new Promise (resolve) -> setTimeout resolve, ms
