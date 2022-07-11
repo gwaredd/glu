@@ -1,4 +1,28 @@
 # glu
+> Environment for glue scripts
+
+## Global Functions
+
+### Logging
+
+All logging is to stderr
+
+```
+die
+error
+warn
+log
+info
+success
+```
+
+
+### Promises
+
+```
+sleep
+```
+
 
 ## Installed Libraries
 
@@ -10,7 +34,11 @@
 * [moment](https://momentjs.com/docs/) - date and time
 * [yargs](https://yargs.js.org/) - command line options
 
-## Reminder
+---
+
+## Other Things
+
+### Libraries
 
 * [mocha](https://mochajs.org/) - unit testing
 * [chai](http://www.chaijs.com/) - assertion library
@@ -21,13 +49,12 @@
 * [d3](https://github.com/d3/d3)
 * [pug](https://github.com/pugjs/pug) - templating
 
-## Runtimes
+### Runtimes
 
 * [PhantomJS](http://phantomjs.org/) - headless browser (testing/automation)
 * [Electron](https://electronjs.org/) - node based desktop app 'container'
 * Puppeteer
 
-| Tools                                         | Version  |      |
-|-----------------------------------------------|----------|------|
-| [ngrok](https://ngrok.com/)                   |          | testing callbacks/webhooks locally |
+### Tools
 
+* [ngrok](https://ngrok.com/)
