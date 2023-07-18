@@ -3,25 +3,20 @@
 
 ## Global Functions
 
-### Logging
+Logging
 
-All logging is to stderr
+    log.verbose
+    log.http
+    log.info
+    log.warn
+    log.error
+    log.fatal
 
-```
-die
-error
-warn
-log
-info
-success
-```
+Globals
 
+    die
+    sleep
 
-### Promises
-
-```
-sleep
-```
 
 
 ## Installed Libraries
@@ -32,13 +27,11 @@ sleep
 * [glob](https://github.com/isaacs/node-glob) file globbing
 * [lodash](https://lodash.com/) - functional programming
 * [moment](https://momentjs.com/docs/) - date and time
+* [winston](https://github.com/winstonjs/winston) - logging library (uses [logform](https://github.com/winstonjs/logform) for formatting and loggingunder the hood)
 * [yargs](https://yargs.js.org/) - command line options
 
----
 
-## Other Things
-
-### Libraries
+## Not Installed Libraries
 
 * [mocha](https://mochajs.org/) - unit testing
 * [chai](http://www.chaijs.com/) - assertion library
@@ -49,12 +42,12 @@ sleep
 * [d3](https://github.com/d3/d3)
 * [pug](https://github.com/pugjs/pug) - templating
 
-### Runtimes
+Runtimes
 
 * [PhantomJS](http://phantomjs.org/) - headless browser (testing/automation)
 * [Electron](https://electronjs.org/) - node based desktop app 'container'
 * Puppeteer
 
-### Tools
+Tools
 
-* [ngrok](https://ngrok.com/)
+* [ngrok](https://ngrok.com/) - for testing webhook callbacks (reverse proxy/tunnel?)
