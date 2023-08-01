@@ -1,5 +1,9 @@
 require '../glu'
 
+x = ['a', 'b', 'c']
+
+print "x is", x
+
 log.verbose 'verbose'
 log.http 'http'
 log.info 'info'
