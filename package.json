@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "main": "src/glu",
   "license": "MIT",
+  "scripts": {
+    "debug": "coffee --nodejs --inspect-brk src/main.coffee",
+    "compile": "coffee -c -m -w src/",
+    "main": "coffee ./src/main.coffee"
+  },
   "dependencies": {
     "axios": "^1.4.0",
     "chalk": "4.1.2",
