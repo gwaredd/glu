@@ -16,19 +16,25 @@ Globals
 
     die
     sleep
+    print
 
 
 
-## Installed Libraries
+## Installs
+
+CommonJS libraries
 
 * [axios](https://axios-http.com/) - promise based HTTP client
 * [chalk@4.1.2](https://github.com/chalk/chalk) - terminal string styling
+* [commander](https://github.com/tj/commander.js) - command line args
+* [crypto-js](https://github.com/brix/crypto-js) - hashing
 * [fs-extra](https://github.com/jprichardson/node-fs-extra) extra fs utils
 * [glob](https://github.com/isaacs/node-glob) file globbing
+* [js-yaml](https://github.com/nodeca/js-yaml) - yaml support
 * [lodash](https://lodash.com/) - functional programming
 * [moment](https://momentjs.com/docs/) - date and time
 * [winston](https://github.com/winstonjs/winston) - logging library (uses [logform](https://github.com/winstonjs/logform) for formatting and loggingunder the hood)
-* [yargs](https://yargs.js.org/) - command line options
+
 
 
 ## Not Installed Libraries
@@ -37,17 +43,16 @@ Globals
 * [chai](http://www.chaijs.com/) - assertion library
 * [chancejs](https://github.com/chancejs/chancejs) - generating random test data
 * [cheerio](https://github.com/cheeriojs/cheerio) - html scraping
-* [enquirer](https://www.npmjs.com/package/enquirer) - for command line interaction
 * [voca](https://vocajs.com/) - for when string.format isn't quite enough
 * [d3](https://github.com/d3/d3)
 * [pug](https://github.com/pugjs/pug) - templating
 
-Runtimes
+## Runtimes
 
 * [PhantomJS](http://phantomjs.org/) - headless browser (testing/automation)
 * [Electron](https://electronjs.org/) - node based desktop app 'container'
 * Puppeteer
 
-Tools
+## Tools
 
 * [ngrok](https://ngrok.com/) - for testing webhook callbacks (reverse proxy/tunnel?)
