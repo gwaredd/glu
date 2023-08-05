@@ -1,5 +1,5 @@
 global._     = require 'lodash'
-global.fs    = require 'fs'
+global.fs    = require 'fs-extra'
 global.path  = require 'path'
 global.log   = require './logger'
 global.print = -> console.log arguments...
