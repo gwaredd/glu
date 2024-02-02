@@ -3,26 +3,42 @@
 
 ## Global Functions
 
-Logging
+### Globals
 
-    log.verbose
-    log.http
+*Utils*
+
+    die
+    sleep
+
+*Logging*
+
+    print
+    warn
+    error
+
+*Libraries*
+
+    _
+    fs
+    path
+
+
+### Logging
+
     log.info
     log.warn
     log.error
     log.fatal
 
-Globals
+    log.debug       verbose output
+    log.http        log http or file requests
+    log.file
 
-    die
-    sleep
-    print
+    log.ok          success (green)
+    log.alert       notice or banner (yellow)
 
 
-
-## Installs
-
-CommonJS libraries
+## Imported Libraries
 
 * [axios](https://axios-http.com/) - promise based HTTP client
 * [chalk@4.1.2](https://github.com/chalk/chalk) - terminal string styling
@@ -35,6 +51,8 @@ CommonJS libraries
 * [moment](https://momentjs.com/docs/) - date and time
 * [winston](https://github.com/winstonjs/winston) - logging library (uses [logform](https://github.com/winstonjs/logform) for formatting and loggingunder the hood)
 
+
+# References
 
 
 ## Not Installed Libraries

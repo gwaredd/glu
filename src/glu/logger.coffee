@@ -4,33 +4,39 @@ chalk    = require 'chalk'
 winston  = require 'winston'
 
 logLevels =
-  fatal   : 0
-  error   : 1
-  warn    : 2
-  info    : 3
-  http    : 4
-  verbose : 5
+  fatal : 0
+  error : 1
+  warn  : 2
+  ok    : 2
+  alert : 2
+  info  : 3
+  http  : 4
+  file  : 4
+  debug : 5
 
 logColours =
-  fatal   : "red"
-  error   : "red"
-  warn    : "magenta"
-  info    : "white"
-  http    : "blue"
-  verbose : "white"
+  fatal : "red"
+  error : "red"
+  warn  : "magenta"
+  ok    : "green"
+  alert : "yellow"
+  info  : "white"
+  http  : "blue"
+  file  : "blue"
+  debug : "white"
 
 winston.addColors logColours
 
+formatLevel = (level) -> chalk[ logColours[ level ] ] "[#{level.toUpperCase().padStart(5, ' ')}]"
+
 format = winston.format.combine(
-    transform: (info) -> { ...info, colour: chalk[ logColours[ info.level ] ] }
     winston.format.timestamp format: 'YYYY-MM-DD hh:mm:ss'
     winston.format.splat()
-    winston.format.padLevels levels: logLevels
-    winston.format.printf (info) -> "[#{info.timestamp}] #{info.colour '[' + info.level.toUpperCase() + ']'} #{info.message}"
+    winston.format.printf (info) -> "[#{info.timestamp}] #{formatLevel info.level} #{info.message}"
 )
 
 module.exports = winston.createLogger
-  level       : 'verbose'
+  level       : 'file'
   levels      : logLevels
   format      : format
   transports : [
