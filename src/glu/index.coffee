@@ -1,9 +1,9 @@
-chalk = require 'chalk'
-
 # global libraries
 global._     = require 'lodash'
 global.fs    = require 'fs-extra'
 global.path  = require 'path'
+global.chalk = require 'chalk'
+global.glob  = require 'glob'
 
 # console output
 global.log   = require './logger'
