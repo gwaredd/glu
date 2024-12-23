@@ -2,7 +2,6 @@
 
 glu     = require './glu'
 program = require 'commander'
-actions = require './actions'
 
 #------------------------------------------------------------------------------
 
@@ -11,14 +10,14 @@ program
   .description    'does stuff'
   .version        '0.0.1'
 
-program
-  .name           'heightmaps'
-  .description    'Perform analysis on heightmaps'
-  .version        '0.0.1'
+# add actions
 
-program
-  .command        'scratch'
-  .description    'scratchpad'
-  .action         actions.scratch
+for name, action of require './actions'
+  cmd = program
+    .command name
+    .action  action.run
+  action.set_options cmd if action.set_options
+
+# run
 
 program.parse()
