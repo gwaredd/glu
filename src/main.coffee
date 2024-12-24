@@ -5,17 +5,20 @@ program = require 'commander'
 
 #------------------------------------------------------------------------------
 
+info = JSON.parse fs.readFileSync path.join __dirname, '../package.json'
+
 program
-  .name           'example'
+  .name           info.name
+  .version        info.version
   .description    'does stuff'
-  .version        '0.0.1'
 
 # add actions
 
 for name, action of require './actions'
   cmd = program
-    .command name
-    .action  action.run
+    .command      name
+    .description  "run the #{name} action"
+    .action       action.run
   action.set_options cmd if action.set_options
 
 # run
