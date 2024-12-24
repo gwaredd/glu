@@ -25,6 +25,7 @@
     glob
     moment
     yaml (custom)
+    json (custom)
 
 ### Logging
 

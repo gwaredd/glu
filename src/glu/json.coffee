@@ -1,15 +1,12 @@
 #------------------------------------------------------------------------------
 
-yaml = require 'js-yaml'
 util = require 'util'
 
 config = 
   check_exists: true
   create_dir  : true
   log         : true
-  format      :
-    lineWidth : -1
-    flowLevel : 6
+  format      : [ null, 2 ]
 
 #------------------------------------------------------------------------------
 
@@ -26,8 +23,8 @@ create = (fn) ->
 #------------------------------------------------------------------------------
 
 module.exports =
-  read      : (fn)      -> check  fn; yaml.load fs.readFileSync fn, 'utf8'
-  write     : (fn,data) -> create fn; fs.writeFileSync fn, yaml.dump data, config.format
-  readAsync : (fn)      -> check  fn; util.promisify( fs.readFile )( fn, 'utf8' ).then (data) -> yaml.load data
-  writeAsync: (fn,data) -> create fn; util.promisify( fs.writeFile ) fn, yaml.dump data, config.format
-  dump      : (data)    -> print yaml.dump data, config.format
+  read      : (fn)      -> check  fn; JSON.parse fs.readFileSync fn, 'utf8'
+  write     : (fn,data) -> create fn; fs.writeFileSync fn, JSON.stringify data, ...config.format
+  readAsync : (fn)      -> check  fn; util.promisify( fs.readFile )( fn, 'utf8' ).then (data) -> JSON.parse data
+  writeAsync: (fn,data) -> create fn; util.promisify( fs.writeFile ) fn, JSON.stringify data, ...config.format
+  dump      : (data)    -> print JSON.stringify data, ...config.format

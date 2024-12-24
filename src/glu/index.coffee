@@ -6,6 +6,7 @@ global.chalk  = require 'chalk'
 global.glob   = require 'glob'
 global.moment = require 'moment'
 global.yaml   = require './yaml'
+global.json   = require './json'
 
 # console output
 global.log    = require './logger'
