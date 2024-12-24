@@ -19,7 +19,7 @@ for name, action of require './actions'
     .command      name
     .description  "run the #{name} action"
     .action       action.run
-  action.set_options cmd if action.set_options
+  action.options cmd if action.options
 
 # run
 

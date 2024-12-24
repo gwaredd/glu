@@ -2,7 +2,7 @@
 
 module.exports =
 
-  set_options: (cmd) ->
+  options: (cmd) ->
     cmd 
       .requiredOption '--data <dir>',  'data directory'
       .option         '--name [name]', 'optional name'
