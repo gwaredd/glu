@@ -23,7 +23,8 @@
     path
     chalk
     glob
-
+    moment
+    yaml (custom)
 
 ### Logging
 
