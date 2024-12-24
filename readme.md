@@ -15,6 +15,7 @@
     print
     warn
     error
+    dump
 
 *Global Libraries*
 
