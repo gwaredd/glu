@@ -16,11 +16,13 @@
     warn
     error
 
-*Libraries*
+*Global Libraries*
 
     _
-    fs
+    fs-extra as fs
     path
+    chalk
+    glob
 
 
 ### Logging
@@ -31,7 +33,7 @@
     log.fatal
 
     log.debug       verbose output
-    log.http        log http or file requests
+    log.http
     log.file
 
     log.ok          success (green)
