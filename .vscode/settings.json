@@ -1,3 +1,6 @@
 {
-    "workbench.colorTheme": "Monokai"
+    "workbench.colorTheme": "Monokai",
+    "cSpell.words": [
+        "dotenv"
+    ]
 }

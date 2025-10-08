@@ -7,5 +7,6 @@ module.exports =
       .requiredOption '--data <dir>',  'data directory'
       .option         '--name [name]', 'optional name'
 
-  run: (opts) ->
+  run: (opts, cmd) ->
     print 'scratch'
+    print opts, cmd.optsWithGlobals()
